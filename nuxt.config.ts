@@ -2,10 +2,14 @@
 export default defineNuxtConfig({
   ssr: false, // Disable server-side rendering
   app: {
-    baseURL: '/<repository-name>/', // Replace <repository-name> with the name of your GitHub repository
+    baseURL: '/just-valiant/', // Replace <repository-name> with the name of your GitHub repository
   },
   nitro: {
-    preset: 'static', // Ensure static site generation
+    preset: 'github_pages', // Ensure static site generation
+    prerender: {
+      routes: ['/'
+      ], // Ensure the index and other dynamic routes are prerendered
+    },
   },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
