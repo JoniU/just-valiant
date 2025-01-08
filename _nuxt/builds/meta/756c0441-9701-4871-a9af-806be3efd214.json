@@ -1,0 +1,1 @@
+{"id":"756c0441-9701-4871-a9af-806be3efd214","timestamp":1736362555762,"matcher":{"static":{"/api/content/content/database.sql":{"prerender":true},"/api/content/dogs/database.sql":{"prerender":true},"/api/content/litter/database.sql":{"prerender":true}},"wildcard":{},"dynamic":{}},"prerendered":[]}
