@@ -8,7 +8,7 @@
         <form action="https://api.staticforms.xyz/submit" method="POST" class="space-y-4">
             <!-- StaticForms Required Fields -->
             <input type="hidden" name="accessKey" value="7ed3cdf4-1dea-4837-ab06-02ed5d28a660" />
-            <input type="hidden" name="redirectTo" value="/thank-you" />
+            <input type="hidden" name="redirectTo" value="https://justvaliant.fi/thank-you" />
             <input type="hidden" name="replyTo" value="$email" />
 
             <!-- Nimi -->

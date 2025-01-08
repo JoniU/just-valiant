@@ -24,7 +24,7 @@ const galleryItems = dog.gallery_folder
 
 <template>
     <UCard>
-        <template #header>
+        <template #header class="">
             <div class="flex items-center space-x-4">
                 <UAvatar :src="dog.avatar_url" class="rounded-full border-2 border-ui-primary" />
                 <div>
@@ -37,7 +37,7 @@ const galleryItems = dog.gallery_folder
         <!-- Gallery -->
         <div v-if="galleryItems.length" class="my-4">
             <UCarousel v-slot="{ item }" dots :items="galleryItems" :ui="{ item: 'basis-1/3' }" class="mb-12">
-                <nuxt-img :src="item" width="500" height="500" fit="cover" class="rounded-md" />
+                <NuxtImg :src="item" width="500" height="500" fit="cover" class="rounded-md" />
             </UCarousel>
         </div>
 

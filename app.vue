@@ -1,7 +1,7 @@
 <template>
   <UApp>
     <Header />
-    <main class="container mx-auto px-4 py-3 flex-grow">
+    <main class="container mx-auto max-w-3xl px-4 py-3 grow">
       <NuxtPage />
     </main>
     <Footer />

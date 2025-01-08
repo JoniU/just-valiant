@@ -21,7 +21,17 @@ const items = ref([
 <template>
     <footer class="bg-primary text-white w-full" style="background-color: var(--ui-primary); color: white;">
         <div class="container mx-auto px-2 py-1">
-            <UNavigationMenu :items="items" color="primary" class="justify-center" />
+            <UNavigationMenu :items="items" color="neutral" class="justify-center text-white" />
         </div>
     </footer>
 </template>
+
+<style>
+footer .text-\[var\(--ui-text-highlighted\)\] {
+    color: white !important;
+}
+
+footer .text-\[var\(--ui-text-dimmed\)\] {
+    color: white !important;
+}
+</style>

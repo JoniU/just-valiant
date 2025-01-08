@@ -3,7 +3,7 @@ title: Tervetuloa Just Valiant Kenneliin!
 description: Kasvatan bologneseja ja pyrin kasvattamaan rotutyypillisiä, hyväluonteisia ja mahdollisimman terveitä bologneseja koiria. Pentueet ovat tarkkaan harkittuja yhdistelmiä, joista voisin itsekin harkita jättäväni pennun kasvamaan.
 ---
 
-![Olivia bichon bolognese](/olivia-header.jpg)
+![Olivia bichon bolognese](/images/olivia-header.jpg)
 
 # Tervetuloa Just Valiant Kenneliin!
 
@@ -36,5 +36,5 @@ Onko haaveissasi pieni bolognesepentu? Lue lisää bolognese rodusta [bolognese-
 
 ## Ulkoiset linkit
 
-- [Kennelliitto](#)
-- [Bolognese Ry](#)
+- [Kennelliitto](https://www.kennelliitto.fi/)
+- [Bolognese Ry](https://www.bolognesery.fi)
