@@ -5,8 +5,23 @@ const imageSizes = [
   '_',
   's_32x32',
   's_64x64',
+  'fit_cover&s_200x200',
   'fit_cover&s_500x500',
-  'fit_cover&s_1000x1000'
+  'fit_cover&s_1000x1000',
+  'w_600',
+  'w_800',
+  'w_1200',
+  'w_1600',
+  'f_webp&_',
+  'f_webp&s_32x32',
+  'f_webp&s_64x64',
+  'f_webp&fit_cover&s_200x200',
+  'f_webp&fit_cover&s_500x500',
+  'f_webp&fit_cover&s_1000x1000',
+  'w_600&f_webp',
+  'w_800&f_webp',
+  'w_1200&f_webp',
+  'w_1600&f_webp'
 ];
 
 const imageFolder = './public'; // Path to your images folder
@@ -38,6 +53,12 @@ export default defineNuxtConfig({
   ssr: false, // Disable server-side rendering
   app: {
     baseURL: '/', // Replace <repository-name> with the name of your GitHub repository
+    head: {
+      link: [
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
+      ],
+    },
   },
   nitro: {
     preset: 'github_pages', // Ensure static site generation

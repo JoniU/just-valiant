@@ -37,7 +37,8 @@ const galleryItems = dog.gallery_folder
         <!-- Gallery -->
         <div v-if="galleryItems.length" class="my-4">
             <UCarousel v-slot="{ item }" dots :items="galleryItems" :ui="{ item: 'basis-1/3' }" class="mb-12">
-                <NuxtImg :src="item" width="500" height="500" fit="cover" class="rounded-md" />
+                <NuxtImg :src="item" sizes="(max-width: 500px) 33vw, 200px" width="500" height="500" fit="cover"
+                    class="rounded-md" format="webp" loading="lazy" />
             </UCarousel>
         </div>
 
