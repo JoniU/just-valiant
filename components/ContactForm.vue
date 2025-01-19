@@ -1,11 +1,11 @@
 <template>
-    <div>
+    <div class="max-w-xl mx-auto">
         <h2 class="text-2xl font-bold mb-4">Oletko kiinnostunut pennuista?</h2>
         <p class="mb-6">
             Täytä alla oleva lomake huolellisesti, niin otamme sinuun yhteyttä mahdollisimman pian.
         </p>
 
-        <form action="https://api.staticforms.xyz/submit" method="POST" class="space-y-4">
+        <form action="https://api.staticforms.xyz/submit" method="POST" class="flex flex-col gap-4 w-full">
             <!-- StaticForms Required Fields -->
             <input type="hidden" name="accessKey" value="7ed3cdf4-1dea-4837-ab06-02ed5d28a660" />
             <input type="hidden" name="redirectTo" value="https://justvaliant.fi/thank-you" />
@@ -13,27 +13,31 @@
 
             <!-- Nimi -->
             <UFormField label="Nimi" required>
-                <UInput name="name" placeholder="Kirjoita nimesi" class="w-full" />
+                <UInput name="name" color="neutral" variant="subtle" placeholder="Kirjoita nimesi"
+                    class="w-full rounded-lg" size="xl" />
             </UFormField>
 
             <!-- Puhelinnumero -->
             <UFormField label="Puhelinnumero" required>
-                <UInput name="phone" type="tel" placeholder="Kirjoita puhelinnumerosi" class="w-full" />
+                <UInput name="phone" type="tel" color="neutral" variant="subtle" placeholder="Kirjoita puhelinnumerosi"
+                    class="w-full rounded-lg" size="xl" />
             </UFormField>
 
             <!-- Sähköposti -->
             <UFormField label="Sähköposti" required>
-                <UInput name="email" type="email" placeholder="Kirjoita sähköpostiosoitteesi" class="w-full" />
+                <UInput name="email" type="email" color="neutral" variant="subtle"
+                    placeholder="Kirjoita sähköpostiosoitteesi" class="w-full rounded-lg" size="xl" />
             </UFormField>
 
             <!-- Dynamic Textarea Fields -->
             <UFormField v-for="field in textareaFields" :key="field.id" :label="field.label" :required="field.required">
-                <UTextarea :name="`$${field.name}`" :placeholder="field.placeholder" class="w-full"
-                    :rows="field.rows" />
+                <UTextarea :name="`$${field.name}`" :placeholder="field.placeholder" color="neutral" variant="subtle"
+                    class="w-full rounded-lg" :rows="field.rows" />
             </UFormField>
 
             <!-- Submit Button -->
-            <UButton type="submit" value="Submit" class="w-full" color="primary">
+            <UButton type="submit" value="Submit"
+                class="w-full bg-[rgb(35,22,81)] text-white px-4 py-3 rounded-lg font-bold hover:bg-[rgb(29,30,44)] transition duration-200">
                 Lähetä
             </UButton>
         </form>
