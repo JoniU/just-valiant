@@ -16,6 +16,6 @@ useSeoMeta({
 
 <template>
     <LitterList />
-    <ContentRenderer v-if="page" :value="page" class="prose" />
+    <ContentRenderer v-if="page" :value="page" class="prose container mx-auto max-w-3xl px-4 py-3 grow" />
     <div v-else>Content not found</div>
 </template>

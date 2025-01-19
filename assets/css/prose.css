@@ -37,24 +37,22 @@
 }
 
 .prose a {
-  color: var(--ui-primary);
+  color: var(--ui-accent);
   text-decoration: none;
 }
 
 .prose a:hover {
   text-decoration: underline;
-  color: var(--ui-primary);
+  color: var(--ui-accent);
 }
 
 .prose hr {
   border: 0;
   height: 1px;
-  background: linear-gradient(
-    to right,
-    rgb(35, 22, 81),
-    rgba(0, 0, 0, 0),
-    rgb(35, 22, 81)
-  );
+  background: linear-gradient(to right,
+      rgb(35, 22, 81),
+      rgba(0, 0, 0, 0),
+      rgb(35, 22, 81));
   margin: 2rem 0;
   opacity: 0.8;
 }

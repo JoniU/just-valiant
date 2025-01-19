@@ -6,6 +6,7 @@
   --color-primary: var(--ui-primary);
   --color-secondary: var(--ui-secondary);
   --color-accent: var(--ui-accent);
+  --color-accent-muted: var(--ui-accent-muted);
   --color-info: var(--ui-info);
   --color-success: var(--ui-success);
   --color-warning: var(--ui-warning);
@@ -30,10 +31,11 @@
   --ui-primary: #3E2F5B !important;
   --ui-secondary: #F9A826 !important;
   --ui-accent: #FF3D68 !important;
-  --ui-info: #56CCF2 !important;
+  --ui-accent-muted: #FF7895 !important;
+  --ui-info: #5690FF !important;
   --ui-success: #6FCF97 !important;
   --ui-warning: #F2C94C !important;
-  --ui-error: #EB5757 !important;
+  --ui-error: #FF4B75 !important;
   --ui-neutral: #FFF !important;
   --ui-text: #333333 !important;
   --ui-text-muted: #828282 !important;

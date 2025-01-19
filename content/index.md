@@ -16,5 +16,3 @@ Olen Joni Justander, Just Valiant Kennelin kasvattaja. Kasvatyöni on pienimuoto
 ## Haaveissa bolognesepentu?
 
 Onko haaveissasi pieni bolognesepentu? Lue lisää bolognese rodusta [bolognese-välilehdeltä](/bolognese) ja ota yhteyttä!
-
-**Koiranpentuja suunnitteilla alkukesälle!**

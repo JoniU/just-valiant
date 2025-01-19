@@ -20,7 +20,7 @@ const items = ref([
 </script>
 
 <template>
-    <footer class="bg-primary text-white w-full">
+    <footer class="bg-primary text-white w-full mt-8">
         <!-- Top Row -->
         <div class="bg-accent text-white w-full py-6">
             <div class="container mx-auto max-w-5xl px-6 md:px-8 grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
