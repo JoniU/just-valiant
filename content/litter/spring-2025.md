@@ -5,7 +5,7 @@ parents:
   mother_calling_name: Olivia
   mother_pedigree_link: https://jalostus.kennelliitto.fi/frmKoira.aspx?RekNo=FI13926/22&R=196
   mother_image: /images/olivia/olivia.png
-  father: Orion della corte del piola
+  father: Orione Della Corte Del Piola
   father_calling_name: Orion
   father_pedigree_link: https://jalostus.kennelliitto.fi/frmKoira.aspx?RekNo=FI21208/22&R=196
   father_image: /images/orion/orion.jpeg
