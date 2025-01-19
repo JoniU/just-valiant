@@ -20,21 +20,3 @@ Olen Joni Justander, Just Valiant Kennelin kasvattaja. Kasvatyöni on pienimuoto
 Onko haaveissasi pieni bolognesepentu? Lue lisää bolognese rodusta [bolognese-välilehdeltä](/bolognese) ja ota yhteyttä!
 
 **Koiranpentuja suunnitteilla alkukesälle!**
-
-## Seuraa meitä
-
-- [**Instagram**](https://www.instagram.com/justvaliantkennel)
-- [**Facebook**](https://www.facebook.com/profile.php?id=61570210745846)
-
-## Kasvattajan tiedot
-
-- Olen käynyt Kasvattajan Peruskurssin vuonna 2023.
-- Kennelnimi _Just Valiant_ on myönnetty vuonna 2024.
-- Olen allekirjoittanut Suomen Kennelliiton kasvattajasopimuksen.
-- Suomen Kennelliiton jäsen alkaen 2023.
-- Bolognese yhdistyksen jäsen.
-
-## Ulkoiset linkit
-
-- [Kennelliitto](https://www.kennelliitto.fi/)
-- [Bolognese Ry](https://www.bolognesery.fi)
