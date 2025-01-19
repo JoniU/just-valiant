@@ -37,10 +37,12 @@ const items = ref([
         <div
             class="container mx-auto px-4 py-3 flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
             <!-- Logo and Name -->
-            <div class="flex items-center space-x-3 justify-center md:justify-start md:mb-0">
-                <img src="/public/olivia-piirros.svg" alt="Just Valiant Kennel" class="h-16 w-16" />
-                <p class="text-lg font-serif font-bold text-gray-800 text-center md:text-left">Just Valiant</p>
-            </div>
+            <NuxtLink to="/">
+                <div class="flex items-center space-x-3 justify-center md:justify-start md:mb-0">
+                    <img src="/public/olivia-piirros.svg" alt="Just Valiant Kennel" class="h-16 w-16" />
+                    <p class="text-lg font-serif font-bold text-gray-800 text-center md:text-left">Just Valiant</p>
+                </div>
+            </NuxtLink>
 
             <!-- Navigation Menu -->
             <div class="flex justify-center md:justify-end">
