@@ -29,8 +29,15 @@ export default defineContentConfig({
                 name: z.string(),
                 parents: z.object({
                     mother: z.string(),
+                    mother_calling_name: z.string(),
+                    mother_pedigree_link: z.string().optional(),
+                    mother_image: z.string().optional(),
                     father: z.string(),
+                    father_calling_name: z.string(),
+                    father_pedigree_link: z.string().optional(),
+                    father_image: z.string().optional(),
                 }),
+                breed: z.string(),
                 born_date: z.string(),
                 puppies: z.array(
                     z.object({
@@ -38,6 +45,8 @@ export default defineContentConfig({
                         sex: z.string(),
                         color: z.string(),
                         status: z.string(), // Example: 'available', 'reserved', or 'sold'
+                        image: z.string(),
+                        pedigree_link: z.string().optional(),
                     })
                 ),
                 gallery_folder: z.string().optional(),

@@ -1,10 +1,5 @@
 <template>
-    <div class="max-w-xl mx-auto">
-        <h2 class="text-2xl font-bold mb-4">Oletko kiinnostunut pennuista?</h2>
-        <p class="mb-6">
-            Täytä alla oleva lomake huolellisesti, niin otamme sinuun yhteyttä mahdollisimman pian.
-        </p>
-
+    <div class="w-full">
         <form action="https://api.staticforms.xyz/submit" method="POST" class="flex flex-col gap-4 w-full">
             <!-- StaticForms Required Fields -->
             <input type="hidden" name="accessKey" value="7ed3cdf4-1dea-4837-ab06-02ed5d28a660" />
