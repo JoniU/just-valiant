@@ -1,66 +1,93 @@
 <script setup lang="ts">
+import { ref, computed } from 'vue';
+
+// Props
 const props = defineProps({
     dog: {
         type: Object,
         required: true,
     },
-})
-
+});
 const { dog } = props;
 
-// Import all images
-const allImages = import.meta.glob('public/images/**/*.jpg', { eager: true })
+// Filter gallery URLs to only include valid strings
+const galleryUrls = computed(() =>
+    Array.isArray(dog.meta?.gallery_urls)
+        ? dog.meta.gallery_urls.filter((url: unknown): url is string => typeof url === 'string')
+        : []
+);
 
-// Normalize gallery folder to remove leading/trailing slashes
-const galleryFolderPath = `/public/${dog.gallery_folder.replace(/^\/|\/$/g, '')}/`;
+// Reactive variables
+const showLightbox = ref(false);
+const currentImage = ref<string | undefined>(undefined);
 
-// Filter gallery images based on the normalized folder path
-const galleryItems = dog.gallery_folder
-    ? Object.keys(allImages)
-        .filter((path) => path.startsWith(galleryFolderPath))
-        .map((path) => path.replace('/public', ''))
-    : [];
+// Functions
+const openLightbox = (image: string) => {
+    currentImage.value = image;
+    showLightbox.value = true;
+};
+
+const closeLightbox = () => {
+    showLightbox.value = false;
+    currentImage.value = undefined; // Reset to undefined
+};
 </script>
 
 <template>
-    <UCard>
-        <template #header class="">
-            <div class="flex items-center space-x-4">
-                <UAvatar :src="dog.avatar_url" class="rounded-full border-2 border-ui-primary" />
-                <div>
-                    <h2 class="text-lg font-bold">{{ dog.name }}</h2>
-                    <p class="text-sm text-gray-500">{{ dog.calling_name }}</p>
-                </div>
+    <div class="bg-white shadow-lg rounded-md">
+        <!-- Header -->
+        <div class="flex items-center space-x-2 border-b border-border bg-muted rounded-t-md p-2">
+            <NuxtImg provider="imagekit" :src="dog.avatar_url" height="64" width="64" :modifiers="{ fit: 'contain' }"
+                class="w-16 h-16 rounded-full object-cover" />
+            <div>
+                <h2 class="text-lg font-bold text-gray-800 mb-0">{{ dog.name }}</h2>
+                <p class="text-sm text-gray-500">{{ dog.calling_name }}</p>
             </div>
-        </template>
+        </div>
 
         <!-- Gallery -->
-        <div v-if="galleryItems.length" class="my-4">
-            <UCarousel v-slot="{ item }" dots :items="galleryItems" :ui="{ item: 'basis-1/3' }" class="mb-12">
-                <NuxtImg :src="item" sizes="(max-width: 500px) 33vw, 200px" width="500" height="500" fit="cover"
-                    class="rounded-md" format="webp" loading="lazy" />
+        <div v-if="galleryUrls.length > 0" class="my-4 p-2 px-14 mx-auto">
+            <UCarousel v-slot="{ item }" arrows :items="galleryUrls"
+                :ui="{ item: 'basis-1/2 md:basis-1/3 lg:basis1/4' }" :autoplay="{ delay: 2000 }" class="">
+                <!-- Carousel Image -->
+                <NuxtImg v-if="item" provider="imagekit" :src="item as string" width="251" height="251" fit="cover"
+                    class="rounded-md cursor-pointer" format="webp" loading="lazy"
+                    @click.stop="() => openLightbox(item as string)" />
+
+                <!-- Lightbox -->
+                <Teleport to=" body">
+                    <Transition enter-from-class="opacity-0" leave-to-class="opacity-0">
+                        <div v-if="showLightbox"
+                            class="z-10 fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center backdrop-blur-sm transition-all duration-300 md:p-8"
+                            @click="closeLightbox">
+                            <NuxtImg provider="imagekit" :src="currentImage"
+                                class="max-w-full max-h-full md:max-w-[90vw] md:max-h-[90vh] rounded-md" format="webp"
+                                loading="lazy" />
+                        </div>
+                    </Transition>
+                </Teleport>
             </UCarousel>
         </div>
 
         <!-- Dog Details -->
-        <div class="px-4">
+        <div class="mt-4 space-y-2 px-14 p-2">
             <p class="flex items-center space-x-2">
                 <UIcon name="i-mingcute-dog-line" class="text-ui-primary" />
-                <strong>Rotu:</strong>&nbsp;{{ dog.breed }}
+                <span><strong>Rotu:</strong>&nbsp;{{ dog.breed }}</span>
             </p>
             <p class="flex items-center space-x-2">
                 <UIcon :name="dog.sex === 'uros' ? 'i-mingcute-male-line' : 'i-mingcute-female-line'"
                     class="text-ui-primary" />
-                <strong>Sukupuoli:</strong>&nbsp;{{ dog.sex }}
+                <span><strong>Sukupuoli:</strong>&nbsp;{{ dog.sex }}</span>
             </p>
             <p class="flex items-center space-x-2">
                 <UIcon name="i-mingcute-calendar-line" class="text-ui-primary" />
-                <strong>Syntynyt:</strong>&nbsp;{{ dog.born_date }}
+                <span><strong>Syntynyt:</strong>&nbsp;{{ dog.born_date }}</span>
             </p>
         </div>
 
         <!-- Links -->
-        <div v-if="dog.registry_link || dog.instagram_link" class="px-4 mt-4">
+        <div v-if="dog.registry_link || dog.instagram_link" class="mt-4 px-14  space-y-2 p-2">
             <p v-if="dog.registry_link" class="flex items-center space-x-2">
                 <UIcon name="i-mingcute-book-line" class="text-ui-primary" />
                 <a :href="dog.registry_link" target="_blank"
@@ -80,11 +107,11 @@ const galleryItems = dog.gallery_folder
         </div>
 
         <!-- Titles -->
-        <div v-if="dog.titles?.length" class="px-4 mt-4">
-            <h3 class="text-lg font-semibold">Tittelit:</h3>
-            <ul class="list-disc list-inside">
+        <div v-if="dog.titles?.length" class="mt-4 px-14 pb-8 p-2">
+            <h3 class="text-lg font-semibold text-gray-800">Tittelit:</h3>
+            <ul class="list-disc list-inside text-gray-600">
                 <li v-for="title in dog.titles" :key="title">{{ title }}</li>
             </ul>
         </div>
-    </UCard>
+    </div>
 </template>

@@ -31,7 +31,7 @@ const items = ref([
                     <div class="flex space-x-4">
                         <a v-for="item in items" :key="item.to" :href="item.to" :target="item.target || '_self'"
                             rel="noopener noreferrer"
-                            class="text-3xl text-white hover:text-gray-300 transition duration-200 bg-primary w-15 h-15 rounded-full p-2 justify-center items-center flex hover:bg-white hover:text-primary">
+                            class="text-3xl text-white transition duration-200 bg-primary w-15 h-15 rounded-full p-2 justify-center items-center flex hover:bg-white hover:text-primary">
                             <UIcon :name="item.icon" size="40" />
                         </a>
                     </div>

@@ -35,11 +35,12 @@ const items = ref([
 </script>
 
 <template>
-    <header class="bg-white shadow-md">
+    <header class="bg-white shadow-md z-20">
         <div class="container mx-auto px-2 py-3 flex items-center justify-between">
             <!-- Logo -->
             <NuxtLink to="/" class="flex items-center space-x-3">
-                <img src="/public/olivia-piirros.svg" alt="Just Valiant Kennel" class="h-8 w-8 md:h-16 md:w-16" />
+                <img src="/public/images/olivia-piirros.svg" alt="Just Valiant Kennel"
+                    class="h-8 w-8 md:h-16 md:w-16" />
                 <p class="text-md md:text-lg font-serif font-bold text-gray-800">Just Valiant</p>
             </NuxtLink>
 

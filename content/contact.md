@@ -11,8 +11,3 @@ Olemme täällä auttamassa sinua kaikissa kysymyksissä liittyen bolognese-rotu
 
 - **Sähköposti:** [justvaliantkennel@gmail.com](mailto:justvaliantkennel@gmail.com)
 - **Puhelin:** +358 41 4516 166
-
-Seuraa meitä myös somessa:
-
-- [Instagram](https://www.instagram.com/justvaliantkennel)
-- [Facebook](https://www.facebook.com/profile.php?id=61570210745846)

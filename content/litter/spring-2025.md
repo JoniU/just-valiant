@@ -1,7 +1,7 @@
 ---
-name: Kevät 2025 pentue
+name: Suunnitteilla pentue keväälle 2025
 parents:
-  mother: Just a Little Bit
+  mother: Bounien Just A Little Bit
   mother_calling_name: Olivia
   mother_pedigree_link: https://jalostus.kennelliitto.fi/frmKoira.aspx?RekNo=FI13926/22&R=196
   mother_image: /images/olivia/olivia.png

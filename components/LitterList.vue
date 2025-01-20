@@ -1,21 +1,21 @@
 <template>
     <div v-if="litters && litters.length > 0">
-        <div class="bg-bg-muted">
+        <div class="bg-bg-muted pt-4 pb-4">
             <div v-for="litter in litters" :key="litter.path" class="container mx-auto max-w-3xl px-4 py-3 grow">
                 <!-- Litter Name -->
-                <h1 class="text-2xl font-bold mb-4 text-center">{{ litter.name }}</h1>
+                <h1 class="text-2xl font-bold mb-8 text-center">{{ litter.name }}</h1>
                 <!-- Parents Section -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-3">
                     <!-- Mother Section -->
                     <div class="flex flex-col items-center bg-white shadow-lg rounded-md p-4 border border-gray-200">
-                        <p class="text-center text-sm mb-1">Äiti - {{ litter.parents.mother_calling_name }}</p>
+                        <p class="text-center text-sm mb-1">Emä - {{ litter.parents.mother_calling_name }}</p>
                         <p class="flex items-center gap-2 text-lg font-semibold text-center">
                             <UIcon name="i-mingcute-female-line" class="text-error text-2xl" />
                             {{ litter.parents.mother }}
                         </p>
-                        <img :src="litter.parents.mother_image || 'https://placehold.co/200x200'"
-                            :alt="`Image of ${litter.parents.mother}`"
-                            class="w-32 h-32 rounded-full border-2 border-error mt-3 object-cover" />
+                        <NuxtImg provider="imagekit" :src="litter.parents.mother_image" height="128" width="128"
+                            :modifiers="{ fit: 'contain' }"
+                            class="w-32 h-32 rounded-full border-4 border-error mt-3 object-cover" />
                         <UButton :href="litter.parents.mother_pedigree_link" color="error" target="_blank"
                             class="mt-4 flex items-center gap-2 px-4 py-2 rounded-md">
                             <UIcon name="i-mdi-link" class="text-lg" />
@@ -30,9 +30,9 @@
                             <UIcon name="i-mingcute-male-line" class="text-info text-2xl" />
                             {{ litter.parents.father }}
                         </p>
-                        <img :src="litter.parents.father_image || 'https://placehold.co/200x200'"
-                            :alt="`Image of ${litter.parents.father}`"
-                            class="w-32 h-32 rounded-full border-2 border-info mt-3 object-cover" />
+                        <NuxtImg provider="imagekit" :src="litter.parents.father_image" height="128" width="128"
+                            :modifiers="{ fit: 'contain' }"
+                            class="w-32 h-32 rounded-full border-4 border-info mt-3 object-cover" />
                         <UButton :href="litter.parents.father_pedigree_link" color="info" target="_blank"
                             class="mt-4 flex items-center gap-2 px-4 py-2 rounded-md">
                             <UIcon name="i-mdi-link" class="text-lg" />
@@ -72,9 +72,9 @@
                         </li>
                     </ul>
                 </div>
-                <h2 class="text-2xl font-bold mt-6 mb-4 text-center">Oletko kiinnostunut pennuista?</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-6 text-center">Oletko kiinnostunut pennuista?</h2>
                 <p class="mb-6 text-center">
-                    Täytä alla oleva lomake huolellisesti, niin otamme sinuun yhteyttä mahdollisimman pian.
+                    Täytä alla oleva lomake, niin otamme sinuun yhteyttä mahdollisimman pian.
                 </p>
                 <UCollapsible
                     class="flex flex-col gap-2 w-full max-w-xl mx-auto bg-white rounded-md shadow-sm border border-gray-200 mb-2">
