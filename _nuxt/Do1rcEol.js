@@ -1,0 +1,1 @@
+import{u as o,q as n}from"./BK-QpmO8.js";import{f as r,h as c,i as s,c as _,a as i,t as m,k as l,o as u}from"./ooHtH0Rv.js";const p={key:0},k=r({__name:"[...slug]",async setup(d){let e,t;const{data:a}=([e,t]=c(()=>o(()=>n("dogs").first(),"$0HfJe28zWN")),e=await e,t(),e);return(f,y)=>s(a)?(u(),_("div",p,[i("h1",null,m(s(a).meta.name),1)])):l("",!0)}});export{k as default};
