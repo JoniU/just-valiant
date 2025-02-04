@@ -45,7 +45,7 @@ const items = ref([
                     <div class="w-1/2 h-[1px] bg-primary mx-auto mt-2 mb-2"></div>
                     <p>Kennelnimi Just Valiant on myönnetty vuonna 2024.</p>
                     <div class="w-1/2 h-[1px] bg-primary mx-auto mt-2 mb-2"></div>
-                    <p>Olen allekirjoittanut Suomen Kennelliiton kasvattajasopimuksen.</p>
+                    <p>Olen allekirjoittanut Suomen Kennelliiton kasvattajasitoumuksen.</p>
                     <div class="w-1/2 h-[1px] bg-primary mx-auto mt-2 mb-2"></div>
                     <p>Suomen Kennelliiton jäsen alkaen 2023.</p>
                     <div class="w-1/2 h-[1px] bg-primary mx-auto mt-2 mb-2"></div>
@@ -54,17 +54,18 @@ const items = ref([
 
                 <!-- Column 3: Links -->
                 <div class="flex flex-col justify-center items-center space-y-4">
-                    <h3 class="font-bold text-xl mb-2">linkit</h3>
+                    <h3 class="font-bold text-xl mb-2"></h3>
                     <div class="w-1/2 h-[1px] bg-white mx-auto mt-0 mb-8"></div>
                     <!-- First Link -->
-                    <a href="/images/olivia-header.jpg" class="flex justify-center items-center w-full group">
+                    <a href="https://www.kennelliitto.fi/" target="_blank"
+                        class="flex justify-center items-center w-full group">
                         <NuxtImg src="/images/kennelliitto.svg"
                             class="h-12 w-auto p-[5px] bg-white rounded transition-transform transform group-hover:scale-105 shadow-sm group-hover:shadow-md duration-300" />
                     </a>
                     <div class="w-1/2 h-[1px] bg-white mx-auto mt-4 mb-8"></div>
 
                     <!-- Second Link -->
-                    <a href="https://www.bolognesery.fi/" class="flex justify-center w-full group">
+                    <a href="https://www.bolognesery.fi/" target="_blank" class="flex justify-center w-full group">
                         <NuxtImg src="/images/blognesery.svg"
                             class="h-40 w-auto p-[5px] bg-white rounded-full transition-transform transform group-hover:scale-105 shadow-sm group-hover:shadow-md duration-300" />
                     </a>

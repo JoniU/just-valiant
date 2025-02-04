@@ -1,13 +1,13 @@
 ---
 title: Tervetuloa Just Valiant Kenneliin!
-description: Kasvatan bologneseja ja pyrin kasvattamaan rotutyypillisiä, hyväluonteisia ja mahdollisimman terveitä bologneseja koiria. Pentueet ovat tarkkaan harkittuja yhdistelmiä, joista voisin itsekin harkita jättäväni pennun kasvamaan.
+description: Kasvatan bologneseja ja pyrin kasvattamaan rotutyypillisiä, hyväluonteisia ja mahdollisimman terveitä koiria. Pentueet ovat tarkkaan harkittuja yhdistelmiä, joista voisin itsekin harkita jättäväni pennun kasvamaan.
 ---
 
 # Tervetuloa Just Valiant Kenneliin!
 
 ## Bolognese rodun kasvatustyötä Helsingissä
 
-Kasvatan bolognese rotua ja pyrin kasvattamaan rotutyypillisiä, hyväluonteisia ja mahdollisimman terveitä bologneseja koiria. Pentueet ovat tarkkaan harkittuja yhdistelmiä, joista voisin itsekin harkita jättäväni pennun kasvamaan. Rakastuin rotuun vuonna 2020 ja sain ensimmäisen oman bolognese koiran, Olivian, vuonna 2021. Käyn aktiivisesti koiranäyttelyissä, sillä ne tarjoavat erinomaisen mahdollisuuden saada palautetta ja kehittää syvällisempää ymmärrystä bolognese rotua kohtaan.
+Kasvatan bolognese rotua ja pyrin kasvattamaan rotutyypillisiä, hyväluonteisia ja mahdollisimman terveitä bolognese rotuisia koiria. Pentueet ovat tarkkaan harkittuja yhdistelmiä, joista voisin itsekin harkita jättäväni pennun kasvamaan. Rakastuin rotuun vuonna 2020 ja sain ensimmäisen oman bolognese koiran, Olivian, vuonna 2021. Käyn aktiivisesti koiranäyttelyissä, sillä ne tarjoavat erinomaisen mahdollisuuden saada palautetta ja kehittää syvällisempää ymmärrystä bolognese rotua kohtaan.
 
 ## Tietoa kasvattajasta
 
