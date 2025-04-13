@@ -1,0 +1,1 @@
+import{u as o,q as r}from"./DjhTurGK.js";import{_ as n}from"./Dh2HFrOa.js";import{f as _,h as c,j as i,k as a,o as l}from"./ClMeI9Da.js";const y=_({__name:"index",async setup(m){let t,e;const{data:s}=([t,e]=c(()=>o(()=>r("litter").all(),"$2eo_wd8Q0-")),t=await t,e(),t);return(p,f)=>(l(),i(a(n),{litters:a(s)},null,8,["litters"]))}});export{y as default};
