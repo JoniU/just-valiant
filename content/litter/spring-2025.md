@@ -1,15 +1,15 @@
 ---
-name: Suunnitteilla pentue keväälle 2025
+name: Suunnitteilla pentue syksylle 2025
 parents:
   mother: Bounien Just A Little Bit
   mother_calling_name: Olivia
   mother_pedigree_link: https://jalostus.kennelliitto.fi/frmKoira.aspx?RekNo=FI13926/22&R=196
   mother_image: /images/olivia/olivia.png
-  father: Orione Della Corte Del Piola
-  father_calling_name: Orion
-  father_pedigree_link: https://jalostus.kennelliitto.fi/frmKoira.aspx?RekNo=FI21208/22&R=196
-  father_image: /images/orion/orion.jpeg
-born_date: Kevät 2025
+  father: Crystalrose’s Bollinger
+  father_calling_name: Dofi
+  father_pedigree_link: https://jalostus.kennelliitto.fi/frmKoira.aspx?RekNo=FI59379%2F21&R=196
+  father_image: /images/dofi/dofi.jpg
+born_date: Syksy 2025
 breed: Bichon Bolognese
 puppies:
 gallery_folder:
@@ -17,7 +17,7 @@ gallery_folder:
 
 # Kevät 2025 Pentue
 
-Koiranpentuja suunnitteilla alkukesälle!
+Pentuja syntymässä lokakuussa 2025.
 
 <!--
 name: Spring 2024 Litter

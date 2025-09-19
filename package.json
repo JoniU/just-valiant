@@ -11,20 +11,22 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/content": "^3.0.0-alpha.8",
-    "@nuxt/image": "^1.8.1",
-    "@nuxt/ui": "^3.0.0-alpha.11",
-    "glob": "^11.0.1",
+    "@nuxt/content": "^3.7.1",
+    "@nuxt/image": "^1.11.0",
+    "@nuxt/ui": "4.0.0-alpha.2",
+    "glob": "^11.0.3",
     "inflight": "^1.0.6",
-    "nuxt": "^3.15.2",
-    "sharp": "^0.33.5",
-    "vue": "latest",
-    "vue-router": "latest"
+    "nuxt": "^4.1.2",
+    "sharp": "^0.34.4",
+    "tailwindcss": "^4.1.13",
+    "vue": "^3.5.21",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@iconify-json/lucide": "^1.2.21",
-    "@iconify-json/mingcute": "^1.2.3",
+    "@iconify-json/lucide": "^1.2.68",
+    "@iconify-json/mingcute": "^1.2.5",
     "@nuxtjs/google-fonts": "^3.2.0",
     "gh-pages": "^6.3.0"
-  }
+  },
+  "packageManager": "pnpm@10.8.0+sha512.0e82714d1b5b43c74610193cb20734897c1d00de89d0e18420aebc5977fa13d780a9cb05734624e81ebd81cc876cd464794850641c48b9544326b5622ca29971"
 }
