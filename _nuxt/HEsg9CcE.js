@@ -1,1 +1,0 @@
-import{u as o,q as n}from"./DjhTurGK.js";import{f as r,h as c,c as _,R as m,k as s,a as i,t as l,o as u}from"./ClMeI9Da.js";const p={key:0},g=r({__name:"[...slug]",async setup(d){let e,t;const{data:a}=([e,t]=c(()=>o(()=>n("dogs").first(),"$xJrnYXvcEk")),e=await e,t(),e);return(f,y)=>s(a)?(u(),_("div",p,[i("h1",null,l(s(a).meta.name),1)])):m("",!0)}});export{g as default};

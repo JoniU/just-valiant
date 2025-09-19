@@ -1,0 +1,1 @@
+import{u as o,q as n}from"./BehdnB3a.js";import{f as r,h as c,c as _,O as m,k as s,o as i,a as l,t as u}from"#entry";const p={key:0},g=r({__name:"[...slug]",async setup(d){let e,t;const{data:a}=([e,t]=c(()=>o(()=>n("dogs").first(),"$oDMInkDOBz")),e=await e,t(),e);return(f,y)=>s(a)?(i(),_("div",p,[l("h1",null,u(s(a).meta.name),1)])):m("",!0)}});export{g as default};
