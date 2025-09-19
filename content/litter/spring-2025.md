@@ -1,5 +1,5 @@
 ---
-name: Suunnitteilla pentue syksylle 2025
+name: Pentuja syntymässä lokakuussa 2025
 parents:
   mother: Bounien Just A Little Bit
   mother_calling_name: Olivia
