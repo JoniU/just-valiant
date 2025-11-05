@@ -1,10 +1,14 @@
 <script setup lang="ts">
-import { LitterList } from '#components';
-const { data: litters } = await useAsyncData(() =>
-    queryCollection('litter').all()
-)
+import { LitterList } from "#components";
+const { data: litters, refresh } = await useAsyncData(
+  "litter-all",
+  () => queryCollection("litter").all(),
+  {
+    watch: [],
+  }
+);
 </script>
 
 <template>
-    <LitterList :litters="litters" />
+  <LitterList :litters="litters" />
 </template>

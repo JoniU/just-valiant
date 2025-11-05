@@ -3,7 +3,9 @@ title: Tervetuloa Just Valiant Kenneliin!
 description: Kasvatan bologneseja ja pyrin kasvattamaan rotutyypillisiä, hyväluonteisia ja mahdollisimman terveitä koiria. Pentueet ovat tarkkaan harkittuja yhdistelmiä, joista voisin itsekin harkita jättäväni pennun kasvamaan.
 ---
 
-# Tervetuloa Just Valiant Kenneliin!
+# Seuraava pentue suunnitteilla keväällä 2027
+
+## Tervetuloa Just Valiant Kenneliin!
 
 ## Bolognese rodun kasvatustyötä Helsingissä
 

@@ -1,6 +1,12 @@
 <script setup lang="ts">
-const { data: dog } = await useAsyncData(() => queryCollection('dogs').first())
-
+const route = useRoute()
+const { data: dog, refresh } = await useAsyncData(
+  `dog-${route.path}`,
+  () => queryCollection('dogs').path(route.path).first(),
+  {
+    watch: [() => route.path],
+  }
+)
 </script>
 
 <template>

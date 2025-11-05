@@ -1,6 +1,10 @@
 <script setup lang="ts">
-const { data: dogs } = await useAsyncData(() =>
-    queryCollection('dogs').all()
+const { data: dogs, refresh } = await useAsyncData(
+  'dogs-all',
+  () => queryCollection('dogs').all(),
+  {
+    watch: [],
+  }
 )
 </script>
 

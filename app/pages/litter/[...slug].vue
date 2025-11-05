@@ -1,7 +1,11 @@
 <script lang="ts" setup>
 const route = useRoute()
-const { data: litter } = await useAsyncData(() =>
-    queryCollection('litter').path(route.path).first()
+const { data: litter, refresh } = await useAsyncData(
+  `litter-${route.path}`,
+  () => queryCollection('litter').path(route.path).first(),
+  {
+    watch: [() => route.path],
+  }
 )
 </script>
 

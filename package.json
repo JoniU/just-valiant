@@ -11,19 +11,19 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/content": "^3.7.1",
+    "@nuxt/content": "^3.8.0",
     "@nuxt/image": "^1.11.0",
     "@nuxt/ui": "4.0.0-alpha.2",
     "glob": "^11.0.3",
     "inflight": "^1.0.6",
-    "nuxt": "^4.1.2",
+    "nuxt": "^4.2.0",
     "sharp": "^0.34.4",
-    "tailwindcss": "^4.1.13",
-    "vue": "^3.5.21",
-    "vue-router": "^4.5.1"
+    "tailwindcss": "^4.1.16",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3"
   },
   "devDependencies": {
-    "@iconify-json/lucide": "^1.2.68",
+    "@iconify-json/lucide": "^1.2.72",
     "@iconify-json/mingcute": "^1.2.5",
     "@nuxtjs/google-fonts": "^3.2.0",
     "gh-pages": "^6.3.0"
